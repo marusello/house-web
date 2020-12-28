@@ -25,14 +25,14 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background: url('../../assets/casa.png') no-repeat 200% center;
+  background: url('../../assets/casa.png') no-repeat 250% center;
 }
 
 #page-landing .content-wrapper img {
-  width: 60px;
-  height: 72px;
-  top: 119px;
-  left: 160px;
+  width: 150px;
+  height: 150px;
+  /* top: 110px; */
+  /* left: 190px; */
 }
 
 #page-landing .content-wrapper main h1 {
@@ -47,24 +47,28 @@
 
   display: flex;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #page-landing .content-wrapper main p {
-  position: absolute;
-  padding-right: 800px;
-  top: 510px;
+  position: relative;
+  height: 200px;
+  width: 284px;
+  right: 200px;;
+  /* top: 10px; */
+  /* display: flex; */
+  /* align-items: flex-start; */
 
   font-size: 24px;
-  line-height: 34px;
+  line-height: 24px;
 }
 
 .content-wrapper .location {
   position: absolute;
-  left: 308px;
+  left: 408px;
   top: 610px;
 
-  font-size: 24px;
+  font-size: 34px;
   line-height: 34px;
 
   display: flex;
@@ -94,6 +98,10 @@
   transition: background-color 0.2s;
 }
 
+.content-wrapper .enter-app:hover {
+  background: #96FEFF;
+}
+
 .content-wrapper .enter-login {
   position: absolute;
   right: 0;
@@ -111,7 +119,8 @@
   transition: background-color 0.2s;
 }
 
-.content-wrapper .enter-app:hover {
+.content-wrapper .enter-login:hover {
   background: #96FEFF;
 }
+
 

@@ -11,10 +11,7 @@
             <l-map
               style="height: 80%; width: 100%"
               :zoom="15"
-              :center="[-22.9240243, -46.5644216]"
-              @update:zoom="zoomUpdated"
-              @update:center="centerUpdated"
-              @update:bounds="boundsUpdated"
+              :center="[-22.9240243, -46.5644216]"              
             >
               <l-tile-layer
                 url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -24,7 +21,7 @@
 
           <div class="input-block">
             <label htmlFor="proprietario">Proprietario</label>
-            <input type="text" v-model="nomeField" />
+            <input type="text" v-model="proprietarioField" />
           </div>
 
           <div class="input-block">
@@ -52,8 +49,13 @@
             </div>
           </div>
         </fieldset>
-
-        <button class="confirm-button" type="submit">Confirmar</button>
+       
+        <router-link to="/house/teste" class="create-house">
+           <button 
+            class="confirm-button" 
+            type="submit" 
+           >Confirmar</button>
+        </router-link>
       </form>
     </main>
   </div>
@@ -66,27 +68,18 @@ import "../styles/views/create-house.css";
 
 import { LMap, LTileLayer } from "vue2-leaflet";
 
+
+
 export default {
   data() {
     return {
-      nomeField: "",
+      proprietarioField: '',
     };
   },
   components: {
     Sidebar,
     LMap,
     LTileLayer,
-  },
-  methods: {
-    zoomUpdated(zoom) {
-      this.zoom = zoom;
-    },
-    centerUpdated(center) {
-      this.center = center;
-    },
-    boundsUpdated(bounds) {
-      this.bounds = bounds;
-    },
-  },
+  },  
 };
 </script>

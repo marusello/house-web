@@ -6,18 +6,15 @@ import VueMdijs from 'vue-mdijs'
 import { mdiMagnify } from '@mdi/js'
 
 import router from "./router";
+import api from './services/api.js';
 
-import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
 import 'leaflet/dist/leaflet.css';
-
-Vue.component('l-map', LMap);
-Vue.component('l-tile-layer', LTileLayer);
-Vue.component('l-marker', LMarker);
 
 VueMdijs.add({ mdiMagnify });
 Vue.use(VueMdijs);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$http = api;
 
 new Vue({
   router,
