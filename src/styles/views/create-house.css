@@ -113,6 +113,10 @@ form.create-house-form .input-block .images-container .new-image {
   align-items: center;
 }
 
+form.create-house-form .input-block input[type=file] {
+  display: none;
+}
+
 form.create-house-form button.confirm-button {
   margin-top: 64px;
 
