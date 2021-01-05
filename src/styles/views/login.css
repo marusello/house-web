@@ -15,10 +15,26 @@
   justify-content: space-between;
 }
 
+#login aside p {
+  position: absolute;
+  width: 349px;
+  height: 76px;
+  left: 320px;
+  top: 371px;
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 69px;
+
+  color: #FFFFFF;
+}
+
 #login aside img {
   position: absolute;
-  width: 141px;
-  height: 139px;
+  width: 200;
+  height: 200px;
   top: 192px;
   left: 392px;
 }
@@ -45,11 +61,36 @@
   margin-top: 24px;
 }
 
+#login .input-block .voltar {
+
+  position: absolute;
+  width: 55.03px;
+  width: 48px;
+  height: 48px;
+  left: 1536.68px;
+  top: 50px;
+
+  border: 0;
+
+  background: #cbeaf0;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .voltar:hover {
+  background: #17D6EB;
+}
+
 #login .input-block h1 {
   color: #8FA7B3;
   position: absolute;
-  width: 360px;
-  height: 406px;
   left: 1091px;
   top: 195px;
 }

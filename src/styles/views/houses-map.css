@@ -6,6 +6,32 @@
   display: flex;
 }
 
+#page-map .voltar {
+  position: absolute;
+  width: 55.03px;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 20px;
+
+  border: 0;
+
+  background: #cbeaf0;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-map .voltar:hover {
+  background: #17D6EB;
+}
+
 #page-map aside {
   width: 440px;
   background: linear-gradient(329.54deg, #8FA7B3 0%, #8FA7B3 100%);
