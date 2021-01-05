@@ -41,7 +41,11 @@
           class="map-popup"
         >
           {{ house.proprietario }}
-          <router-link to="/house/teste"> vai </router-link>
+          <router-link to="/house/teste">
+            <v-icon>
+              <span class="material-icons"> arrow_forward </span>
+            </v-icon>
+          </router-link>
         </LPopup>
       </LMarker>
     </LMap>
